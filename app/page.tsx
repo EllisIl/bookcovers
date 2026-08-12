@@ -1,7 +1,9 @@
 import Image from 'next/image'
 import Navbar from '@/components/navbar'
+import Carousel from '@/components/carousel';
 
 // Take inspo from https://nerdy.ink/
+// 114030614+EllisIl@users.noreply.github.com
 
 export default function Home() {
   const products = [
@@ -13,29 +15,9 @@ export default function Home() {
   return (
     <main className="min-h-screen text-gray-900 flex flex-col">
       <Navbar />
-      {/* Header */}
-      <header className="border-b px-6 py-6 text-center">
-        <h1 className="text-3xl font-bold tracking-tight">Ellis&apos; Book Jackets</h1>
-        <p className="text-gray-600 mt-2">
-          Protect your books with beautifully crafted dust covers
-        </p>
-      </header>
 
       {/* Hero */}
-      <section className="bg-[#faf7f2] text-center px-6 py-16">
-        <h2 className="text-2xl md:text-3xl font-semibold">
-          Elegant protection for every book lover
-        </h2>
-
-        <p className="mt-4 text-gray-700 max-w-2xl mx-auto">
-          Our dust covers are designed to keep your books safe from wear, dust,
-          and time
-        </p>
-
-        <button className="mt-6 px-6 py-3 bg-black text-white rounded-md hover:bg-gray-800 transition">
-          Shop Now
-        </button>
-      </section>
+      <Carousel />
 
       {/* Products */}
       <section className="px-6 py-12 text-center">
